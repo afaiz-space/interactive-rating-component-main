@@ -1,0 +1,126 @@
+:root {
+  /* Primary */
+  --Orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--Very-Dark-Blue);
+}
+
+/* typography */
+h1,
+h2 {
+  color: var(--White);
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--Light-Grey);
+}
+
+/* button */
+button {
+  outline: none;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 50%;
+}
+.container {
+  width: 25rem;
+}
+/* card section start */
+.card {
+  width: 100%;
+  height: 25rem;
+  background: var(--Dark-Blue);
+  border-radius: 18px;
+  border: 2px solid blueviolet;
+  padding: 48px 28px;
+  display: flex;
+
+  flex-flow: column;
+  justify-content: space-between;
+}
+.card-front {
+  align-items: flex-start;
+}
+.card-front_wrap {
+  display: block;
+}
+picture {
+  padding: 16px;
+  border-radius: 50%;
+  background-color: var(--Medium-Grey);
+  display: grid;
+  place-items: center;
+}
+.btn-section {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.btn {
+  background: var(--Medium-Grey);
+  color: var(--White);
+  transition: background-color linear 0.3ms;
+}
+.btn:focus {
+  background: var(--Orange);
+}
+.btn:hover {
+  background: var(--Light-Grey);
+}
+
+/* submit button */
+.submit {
+  width: 100%;
+  border-radius: 30px;
+  background: var(--Orange);
+  color: var(--White);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color linear 0.3s, color ease 0.3s;
+}
+.submit:hover {
+  background: var(--White);
+  color: var(--Orange);
+}
+/* card front end */
+/* card back start */
+.card-back {
+  text-align: center;
+  align-items: center;
+  display: none;
+}
+
+.no-chips {
+  background: var(--Very-Dark-Blue);
+  border-radius: 30px;
+  padding: 4px 18px;
+  margin-top: 16px;
+}
+.no-chips p {
+  color: var(--Orange);
+}
+.back_card-content {
+  margin-top: 28px;
+}
+/* card back end */
